@@ -13,8 +13,7 @@
 		AAA3C5C81BDFD57000844DDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAA3C5C61BDFD57000844DDD /* Main.storyboard */; };
 		AAA3C5CA1BDFD57000844DDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAA3C5C91BDFD57000844DDD /* Assets.xcassets */; };
 		AAA3C5CD1BDFD57000844DDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAA3C5CB1BDFD57000844DDD /* LaunchScreen.storyboard */; };
-		AAA3C5D81BDFD57000844DDD /* RomanNumeralConvertorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA3C5D71BDFD57000844DDD /* RomanNumeralConvertorTests.m */; };
-		AAA3C5E31BDFD57000844DDD /* RomanNumeralConvertorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA3C5E21BDFD57000844DDD /* RomanNumeralConvertorUITests.m */; };
+		AAA3C5F31BE0352D00844DDD /* RomanNumeralConvertTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA3C5F21BE0352D00844DDD /* RomanNumeralConvertTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,11 +45,9 @@
 		AAA3C5CC1BDFD57000844DDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AAA3C5CE1BDFD57000844DDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAA3C5D31BDFD57000844DDD /* RomanNumeralConvertorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RomanNumeralConvertorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AAA3C5D71BDFD57000844DDD /* RomanNumeralConvertorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RomanNumeralConvertorTests.m; sourceTree = "<group>"; };
 		AAA3C5D91BDFD57000844DDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAA3C5DE1BDFD57000844DDD /* RomanNumeralConvertorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RomanNumeralConvertorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AAA3C5E21BDFD57000844DDD /* RomanNumeralConvertorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RomanNumeralConvertorUITests.m; sourceTree = "<group>"; };
-		AAA3C5E41BDFD57000844DDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAA3C5F21BE0352D00844DDD /* RomanNumeralConvertTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RomanNumeralConvertTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +80,6 @@
 			children = (
 				AAA3C5BC1BDFD56F00844DDD /* RomanNumeralConvertor */,
 				AAA3C5D61BDFD57000844DDD /* RomanNumeralConvertorTests */,
-				AAA3C5E11BDFD57000844DDD /* RomanNumeralConvertorUITests */,
 				AAA3C5BB1BDFD56F00844DDD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -125,19 +121,10 @@
 		AAA3C5D61BDFD57000844DDD /* RomanNumeralConvertorTests */ = {
 			isa = PBXGroup;
 			children = (
-				AAA3C5D71BDFD57000844DDD /* RomanNumeralConvertorTests.m */,
 				AAA3C5D91BDFD57000844DDD /* Info.plist */,
+				AAA3C5F21BE0352D00844DDD /* RomanNumeralConvertTest.m */,
 			);
 			path = RomanNumeralConvertorTests;
-			sourceTree = "<group>";
-		};
-		AAA3C5E11BDFD57000844DDD /* RomanNumeralConvertorUITests */ = {
-			isa = PBXGroup;
-			children = (
-				AAA3C5E21BDFD57000844DDD /* RomanNumeralConvertorUITests.m */,
-				AAA3C5E41BDFD57000844DDD /* Info.plist */,
-			);
-			path = RomanNumeralConvertorUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,7 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAA3C5D81BDFD57000844DDD /* RomanNumeralConvertorTests.m in Sources */,
+				AAA3C5F31BE0352D00844DDD /* RomanNumeralConvertTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +275,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAA3C5E31BDFD57000844DDD /* RomanNumeralConvertorUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +484,7 @@
 				AAA3C5E91BDFD57000844DDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AAA3C5EA1BDFD57000844DDD /* Build configuration list for PBXNativeTarget "RomanNumeralConvertorTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +493,7 @@
 				AAA3C5EC1BDFD57000844DDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AAA3C5ED1BDFD57000844DDD /* Build configuration list for PBXNativeTarget "RomanNumeralConvertorUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +502,7 @@
 				AAA3C5EF1BDFD57000844DDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
